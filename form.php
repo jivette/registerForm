@@ -1,7 +1,6 @@
 <?php
 
 try{
-var_dump($_POST);
 
 $response['posts'] = $_POST;
 
