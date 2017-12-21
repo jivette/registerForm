@@ -1,18 +1,144 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" href="css/bootstrap.css">
-		<link rel="stylesheet" href="css/style.css">
-		<script type="text/javascript" src="js/jQuery-1.10.1.js"></script>
-		<script type="text/javascript" src="js/bootstrap.js"></script>
-		<title>
-		</title>
-	</head> 
-
-<body>
-
-
-</body>
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <link rel="stylesheet" href="css/awesome.min.css">
+      <link rel="stylesheet" href="css/style.css">
+      <title>
+      </title>
+   </head>
+   <body>
+      <div class="container">
+         <div class="col-md-8 col-md-offset-2">
+            <div class="c-contact">
+               <p align="center"><strong>Employment Record - Employment Details</strong></p>
+               <p align="center">To be completed and retained for each employee</p>
+               <form action="#" id="defaultForm" method="POST">
+                  <div id="alertContainer" class="alert" style="display: none;"></div>
+                  <p class="text-info"><strong>Employer details</strong></p>
+                  <div class="form-group">
+                     <label class="control-label">Registered</label>
+                     <select name="registered" class="form-control" id="registered">
+                     </select>
+                  </div>
+                  <div class="form-group">
+                     <label class="control-label">Trading name (if</label>
+                     <input type="text" name="tradingName" class="form-control">
+                  </div>
+                  <div class="form-group">
+                     <label class="control-label">ABN:</label>
+                     <input type="text" name="abn" class="form-control">
+                  </div>
+                  <p class="text-info"><strong>Employee details</strong></p>
+                  <div class="form-group">
+                     <label class="control-label">Full name:</label>
+                     <input type="text" name="fullName" class="form-control">
+                  </div>
+                  <div class="form-group">
+                     <div class="col-md-6 noPaddLeft">
+                        <div class="form-group">
+                           <label class="control-label">Date of birth *:</label>
+                           <input type='date' class="form-control" name="datebirth" />
+                        </div>
+                     </div>
+                     <div class="col-md-6 noPaddRight">
+                        <div class="form-group">
+                           <label class="control-label">Phone number(s):</label>
+                           <input type="text" name="phone" class="form-control">
+                        </div>
+                     </div>
+                  </div>
+                  <div class="form-group">
+                     <label class="control-label">Address*:</label>
+                     <input type="text" name="address" class="form-control">
+                  </div>
+                  <div class="form-group">
+                     <div class="col-md-6 noPaddLeft">
+                        <div class="form-group">
+                           <label class="control-label">Tax file:</label>
+                           <input type="text" name="taxFile" class="form-control">
+                        </div>
+                     </div>
+                     <div class="col-md-6 noPaddRight">
+                        <div class="form-group">
+                           <label class="control-label">Date employment:</label>
+                           <input type="text" name="dateEmployment" class="form-control">
+                        </div>
+                     </div>
+                  </div>
+                  <div class="form-group">	
+                     <label class="checkbox-inline">
+                     Employment status: 
+                     </label>
+                     <label class="checkbox-inline">
+                     <input type="checkbox" name="employmentStatus" value="Ongoing"> Ongoing: 
+                     </label>
+                     <label class="checkbox-inline">
+                     <input type="checkbox" name="employmentStatus" value="Temporary"> Temporary:
+                     </label>						
+                     <label class="checkbox-inline">
+                     <input type="checkbox" name="employmentStatus" value="Other"> Other: <input type="text" class="form-control">
+                     </label>						
+                  </div>
+                  <div class="form-group">	
+                     <label class="checkbox-inline">
+                     <input type="checkbox" name="time" value="fullNameCheck">  Full time
+                     </label>
+                     <label class="checkbox-inline">
+                     <input type="checkbox" name="time" value="Part-time"> Part-time
+                     </label>
+                     <label class="checkbox-inline">
+                     <input type="checkbox" name="time" value="Casual"> Casual
+                     </label>						
+                     <label class="checkbox-inline">
+                     <input type="checkbox" name="time" value="Other"> Other
+                     </label>						
+                     <label class="checkbox-inline">
+                     (Specify e.g. piece <input type="text" value="" class="form-control">
+                     </label>						
+                  </div>
+                  <div class="form-group">
+                     <label class="control-label">Ordinary hours of work* (for part-time or full-time employee</label>
+                     <div class="input-group">
+                        <input type="text" class="form-control" name="ordinaryhours" aria-describedby="basic-addon1">
+                        <span class="input-group-addon" id="basic-addon1">hours</span>
+                     </div>
+                  </div>
+                  <div class="form-group">
+                     <label class="control-label">Agree/required method of pay (e.g.</label>
+                     <input type="text" name="methodpay" class="form-control">
+                  </div>
+                  <div class="form-group">
+                     <label class="control-label">Agree/required pay period (e.g. </label>
+                     <input type="text" name="payperiod" class="form-control">
+                  </div>
+                  <div class="form-group">
+                     <label class="control-label">Agree/required pay day (e.g.</label>
+                     <input type="text" name="payday" class="form-control">
+                  </div>
+                  <div class="form-group">
+                     <label class="control-label">Apprenticeship/Traineeship</label>
+                     <input type="text" name="apprenticeship" class="form-control">
+                  </div>
+                  <div class="form-group">
+                     <label class="control-label">Name of award or Agreement that</label>
+                     <input type="text" name="awardoragreement" class="form-control">
+                  </div>
+                  <div class="form-group">
+                     <label class="control-label">Classification/job title under the</label>
+                     <input type="text" name="classification" class="form-control">
+                  </div>
+                  <button type="submit" class="btn btn-lg btn-success">Submit</button>
+               </form>
+            </div>
+         </div>
+      </div>
+      <script type="text/javascript" src="js/jquery.min.js"></script>
+      <script type="text/javascript" src="js/formValidation.min.js"></script>
+      <script type="text/javascript" src="js/bootstrap.min.js"></script>
+      <script type="text/javascript" src="js/form.js"></script>
+      <script type="text/javascript" src="js/data.js"></script>
+   </body>
 </html>
